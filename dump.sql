@@ -1,0 +1,1 @@
+La sauvegarde de table complexe et des noms de schémas n'est pas supporté sur Windows.
