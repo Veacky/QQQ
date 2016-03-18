@@ -7,7 +7,7 @@ $(document).ready(function(){
     
     // send ajax request
     $.ajax({
-      url: "action.php",
+      url: "offres.php",
       type: "get", //send it through get method
       data:{id_offre: val},
       success: function(response) {
@@ -18,7 +18,7 @@ $(document).ready(function(){
        alert("something went wrong");
       }
     });
-    
+
   });
 
 });
@@ -26,8 +26,6 @@ $(document).ready(function(){
 
 function displayData(data){
 	data = JSON.parse(data)
-	console.log(data);
-	console.log(data["desc"]);
 
 	$("#titleOffre").empty();
 	$("#titleOffre").append(data["name"]);
@@ -35,4 +33,6 @@ function displayData(data){
 	$("#descOffre").append(data["desc"]);
 	$("#priceOffre").empty();
 	$("#priceOffre").append(data["price"]);
+  $("#imgOffre").empty();
+  $("#imgOffre").append("<img class='thumbnail' src=img/"+data["name"]+".jpg>");
 }

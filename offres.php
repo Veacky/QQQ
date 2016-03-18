@@ -12,6 +12,7 @@ if(isset($_GET["id_offre"])){
 	$info["name"] = $row["name"];
 	$info["desc"] = $row["desc"];
 	$info["price"] = $row["price"];
+	$info["img"] = $row["img"];
 }
 
 echo json_encode($info);
