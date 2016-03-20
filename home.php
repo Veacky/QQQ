@@ -20,7 +20,7 @@
 			<ul class="menu">
 				<li><span class="gras">Info'rmation</span></li>
 				<li><a href="home.php">Accueil</a></li>
-				<li><a href="offre.html">Nos Offres</a></li>
+				<li><a href="offre.php">Nos Offres</a></li>
 				<li><a href="about.php">Nous contacter</a></li>
 			</ul>
 		</div>
@@ -59,6 +59,7 @@
 		<li><a href="about.php">Nous contacter</a></li>
 		<li class="float-right"><span class="gras">Info'rmation</span> - Copyright 2016</li>
 	</ul>
+	</br></br>
 </div>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

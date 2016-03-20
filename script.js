@@ -32,7 +32,7 @@ function displayData(data){
 	$("#descOffre").empty();
 	$("#descOffre").append(data["desc"]);
 	$("#priceOffre").empty();
-	$("#priceOffre").append(data["price"]);
+	$("#priceOffre").append(data["price"]+"€");
   $("#imgOffre").empty();
   $("#imgOffre").append("<img class='thumbnail' src=img/"+data["name"]+".jpg>");
 }

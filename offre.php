@@ -25,7 +25,7 @@
 			<ul class="menu">
 				<li><span class="gras">Info'rmation</span></li>
 				<li><a href="home.php">Accueil</a></li>
-				<li><a href="offre.html">Nos Offres</a></li>
+				<li><a href="offre.php">Nos Offres</a></li>
 				<li><a href="about.php">Nous contacter</a></li>
 			</ul>
 		</div>
@@ -42,6 +42,7 @@
 	</ul>
 	</nav>
 </div>
+
 <div class="row">
 	<div id="imgOffre" class="medium-6 columns">
 		<img class="thumbnail" src="img/abonnement.jpg">
@@ -77,7 +78,7 @@
 	<hr>
 	<ul class="tabs" data-tabs id="example-tabs">
 		<li class="tabs-title is-active"><a href="#infos" aria-selected="true">Informations sur l'offre sélectionnée</a></li>
-		<li class="tabs-title"><a href="#avis">Avis des utilisateurs utilisants cette offre</a></li>
+		<li class="tabs-title"><a href="#avis">Avis des utilisateurs</a></li>
 	</ul>
 	
 	<div class="tabs-content" data-tabs-content="example-tabs">
@@ -89,32 +90,51 @@
 				<?php $query = "SELECT * FROM offre where id = 1";
 						$result = pg_query($query); echo pg_fetch_assoc($result)["desc"];  ?>
 			</p>
-			Prix : <span id="priceOffre"><?php $query = "SELECT price FROM offre where id = 1";
-						$result = pg_query($query); echo pg_fetch_assoc($result)["price"];  ?></span> €
+			Prix : <span id="priceOffre" class="label"><?php $query = "SELECT price FROM offre where id = 1";
+						$result = pg_query($query); echo pg_fetch_assoc($result)["price"];  ?>€ </span>
 		</div>
 
 
 		<div class="tabs-panel" id="avis">
 			<h4>Avis des utilisateurs :</h4>
-			<div class="media-object stack-for-small">
+			<div class="media-object">
 					<?php $query = "SELECT * FROM avis a JOIN offre o ON a.id_offre = o.id";
 						$result = pg_query($query);
 						while($row = pg_fetch_assoc($result)){
-							echo "<div class='media-object-section'>";
+							echo "<div class='media-object-main-section avis'>";
 							echo "<h5 class='titleAvis'>".$row["title"]."</h5>";
-							echo "<span class='idOffre'>".$row["name"]."</span></br>";
-							echo "<p class='textAvis'>".$row["text"]."</p>";
+							echo "<span class='idOffre italic'>".$row["name"]."</span></br>";
+							echo "<p class='textAvis'>\" ".$row["text"]." \"</p> ";
+							echo "<hr>";
 							echo "</div>";
 						} ?>
 				</div>
 
-			<form method="post">
+			<form method="post" action="avis.php">
+				<h4 class="tabs-title">Laissez votre avis :</h4>
+				</br></br>
 				<label>
+					Titre : 
+					<input type="text" name="titleAvis"/>
 					Mon avis :
-					<textarea placeholder=" ... "></textarea>
+					<textarea name="textAvis" placeholder=""></textarea>
 				</label>
-				<input class="button" value="Publier mon avis">
-
+				<label>Votre offre :
+					<select name="choiceOffre">
+						<?php
+					$query = "SELECT * FROM offre";
+					$result = pg_query($query);
+					while($row = pg_fetch_assoc($result)){
+						if($row["id"]=="1"){
+							echo '<option selected value="'.$row["id"].'">'.$row["name"].'</option>';
+						}
+						else
+   						echo '<option value="'.$row["id"].'">'.$row["name"].'</option>';
+   					}
+   					?>
+   					</select>
+				</label>
+				<input type="submit" class="button" value="Publier mon avis" name="action"/>
 			</form>
 		</div>
 	</div>
@@ -127,7 +147,7 @@
 	<ul class="menu">
 		<li><span class="gras">Info'rmation</span></li>
 		<li><a href="home.php">Accueil</a></li>
-		<li><a href="offre.html">Nos Offres</a></li>
+		<li><a href="offre.php">Nos Offres</a></li>
 		<li><a href="about.php">Nous contacter</a></li>
 		<li class="float-right"><span class="gras">Info'rmation</span> - Copyright 2016</li>
 	</ul>

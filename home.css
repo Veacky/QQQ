@@ -21,6 +21,10 @@ li{
 	font-weight: bold;
 }
 
+.italic{
+	font-style: italic;
+}
+
 div#big-logo{
 	background-image: url("img/logo.png");
 	background-position:center center;
@@ -30,4 +34,12 @@ div#big-logo{
 	padding-top: 300px;
 	background-size:800px;
 	background-repeat: no-repeat;
+}
+
+.textAvis{
+	text-align: justify;
+}
+
+.avis{
+	margin-top: 15px;
 }

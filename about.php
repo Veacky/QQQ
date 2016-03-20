@@ -1,17 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Info'rmation | Nos offres</title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
 
-
-
-
-
-<ul class="tabs" data-tabs id="example-tabs">
-  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-  <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-</ul>
-<div class="tabs-content" data-tabs-content="example-tabs">
-  <div class="tabs-panel is-active" id="panel1">
-    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-  </div>
-  <div class="tabs-panel" id="panel2">
-    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-  </div>
+<div class="top-bar">
+	<div class="row">
+		<div class="top-bar-left">
+			<ul class="dropdown menu" data-dropdown-menu>
+				<li class="menu-text">Info'rmation</li>
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<ul class="menu">
+				<li><span class="gras">Info'rmation</span></li>
+				<li><a href="home.php">Accueil</a></li>
+				<li><a href="offre.php">Nos Offres</a></li>
+				<li><a href="about.php">Nous contacter</a></li>
+			</ul>
+		</div>
+	</div>
 </div>
+
+<br>
+
+
+<div class="row columns">
+	<nav aria-label="You are here:" role="navigation">
+	<ul class="breadcrumbs">
+	<li><a href="home.php">Accueil</a></li>
+	<li><span class="show-for-sr">Current: </span> Nous contacter</li>
+	</ul>
+	</nav>
+</div>
+
+<div class="row">
+	<div class="large-5 columns">
+
+		<p style="text-align: justify"> A tous moments, vous pouvez nous contacter pour obtenir plus d'information à propos de notre entreprise, de nos offres et de nos services. 
+			N'hésitez donc pas à nous appeler ou nous envoyer un mail pour prendre contact avec nous.
+		</p>
+
+	</div>
+	<div class="large-7 columns">
+
+		<h4> Par téléphone : </h4>
+			<p class="label">
+				04 50 60 70 80
+			</p>
+
+			<hr>
+
+		<h4> Par e-mail : </h4>
+			<p class="label">
+				contact@information.com
+			</p>
+
+			<hr>
+
+		<h4> Coordonnées : </h4>
+			<p class="label">
+				Info'rmation </br>
+				10 rue de la Plaine </br>
+				74000 Annecy </br>
+				FRANCE
+			</p>
+
+	</div>
+</div>
+
+
+
+
+
+	<div class="row column">
+	<hr>
+		<ul class="menu">
+			<li><span class="gras">Info'rmation</span></li>
+			<li><a href="home.php">Accueil</a></li>
+			<li><a href="offre.php">Nos Offres</a></li>
+			<li><a href="about.php">Nous contacter</a></li>
+			<li class="float-right"><span class="gras">Info'rmation</span> - Copyright 2016</li>
+		</ul>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+<script type="text/javascript" src="https://intercom.zurb.com/scripts/zcom.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+<?php
