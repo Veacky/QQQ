@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Info'rmation | Nos offres</title>
+<title>Info'rmation | Contact</title>
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
@@ -14,12 +14,11 @@
 	<div class="row">
 		<div class="top-bar-left">
 			<ul class="dropdown menu" data-dropdown-menu>
-				<li class="menu-text">Info'rmation</li>
+				<li>In<span class="gras">fo'rmation</span></li>
 			</ul>
 		</div>
 		<div class="top-bar-right">
 			<ul class="menu">
-				<li><span class="gras">Info'rmation</span></li>
 				<li><a href="home.php">Accueil</a></li>
 				<li><a href="offre.php">Nos Offres</a></li>
 				<li><a href="about.php">Nous contacter</a></li>
@@ -35,7 +34,7 @@
 	<nav aria-label="You are here:" role="navigation">
 	<ul class="breadcrumbs">
 	<li><a href="home.php">Accueil</a></li>
-	<li><span class="show-for-sr">Current: </span> Nous contacter</li>
+	<li><span class="show-for-sr">Current: </span>Nous contacter</li>
 	</ul>
 	</nav>
 </div>
@@ -43,7 +42,7 @@
 <div class="row">
 	<div class="large-5 columns">
 
-		<p style="text-align: justify"> A tous moments, vous pouvez nous contacter pour obtenir plus d'information à propos de notre entreprise, de nos offres et de nos services. 
+		<p style="text-align: justify"> A tous moments, vous pouvez nous contacter pour obtenir plus d'informations à propos de notre entreprise, de nos offres et de nos services. 
 			N'hésitez donc pas à nous appeler ou nous envoyer un mail pour prendre contact avec nous.
 		</p>
 
@@ -82,11 +81,11 @@
 	<div class="row column">
 	<hr>
 		<ul class="menu">
-			<li><span class="gras">Info'rmation</span></li>
+			<li>In<span class="gras">fo'rmation</span></li>
 			<li><a href="home.php">Accueil</a></li>
 			<li><a href="offre.php">Nos Offres</a></li>
 			<li><a href="about.php">Nous contacter</a></li>
-			<li class="float-right"><span class="gras">Info'rmation</span> - Copyright 2016</li>
+			<li class="float-right">In<span class="gras">fo'rmation</span> - Copyright 2016</li>
 		</ul>
 	</div>
 

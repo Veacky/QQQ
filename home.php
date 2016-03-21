@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Info'rmation | Nos offres</title>
+<title>Info'rmation | Accueil</title>
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
@@ -13,12 +13,11 @@
 	<div class="row">
 		<div class="top-bar-left">
 			<ul class="dropdown menu" data-dropdown-menu>
-				<li class="menu-text">Info'rmation</li>
+				<li>In<span class="gras">fo'rmation</span></li>
 			</ul>
 		</div>
 		<div class="top-bar-right">
 			<ul class="menu">
-				<li><span class="gras">Info'rmation</span></li>
 				<li><a href="home.php">Accueil</a></li>
 				<li><a href="offre.php">Nos Offres</a></li>
 				<li><a href="about.php">Nous contacter</a></li>
@@ -53,7 +52,7 @@
 <div class="row column">
 <hr>
 	<ul class="menu">
-		<li><span class="gras">Info'rmation</span></li>
+		<li>In<span class="gras">fo'rmation</span></li>
 		<li><a href="home.php">Accueil</a></li>
 		<li><a href="offre.php">Nos Offres</a></li>
 		<li><a href="about.php">Nous contacter</a></li>

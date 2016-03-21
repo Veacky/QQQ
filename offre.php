@@ -18,12 +18,11 @@
 	<div class="row">
 		<div class="top-bar-left">
 			<ul class="dropdown menu" data-dropdown-menu>
-				<li class="menu-text">Info'rmation</li>
+				<li>In<span class="gras">fo'rmation</span></li>
 			</ul>
 		</div>
 		<div class="top-bar-right">
 			<ul class="menu">
-				<li><span class="gras">Info'rmation</span></li>
 				<li><a href="home.php">Accueil</a></li>
 				<li><a href="offre.php">Nos Offres</a></li>
 				<li><a href="about.php">Nous contacter</a></li>
@@ -45,7 +44,7 @@
 
 <div class="row">
 	<div id="imgOffre" class="medium-6 columns">
-		<img class="thumbnail" src="img/abonnement.jpg">
+		<img class="thumbnail" src="img/Abonnement.jpg">
 	</div>
 	<div class="medium-6 large-5 columns">
 		<h3>Découvrez nos offres :</h3>
@@ -145,12 +144,13 @@
 <div class="row column">
 <hr>
 	<ul class="menu">
-		<li><span class="gras">Info'rmation</span></li>
+		<li>In<span class="gras">fo'rmation</span></li>
 		<li><a href="home.php">Accueil</a></li>
 		<li><a href="offre.php">Nos Offres</a></li>
 		<li><a href="about.php">Nous contacter</a></li>
-		<li class="float-right"><span class="gras">Info'rmation</span> - Copyright 2016</li>
+		<li class="float-right">In<span class="gras">fo'rmation</span> - Copyright 2016</li>
 	</ul>
+		</br></br>
 </div>
 
 
